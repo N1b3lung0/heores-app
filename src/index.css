@@ -1,0 +1,59 @@
+body {
+    color: #222629;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+}
+.center-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-col-d {
+    display: table-cell;
+}
+.p-col-m {
+    display: none;
+}
+
+.p-menubar {
+    background-color: #FEFEFE  !important;
+    margin: 1rem;
+}
+
+.shadow {
+    -webkit-box-shadow: 2px 2px 4px 0px rgba(51,51,51,0.7); 
+    box-shadow: 2px 2px 4px 0px rgba(51,51,51,0.7);
+}
+
+.container {
+    margin: 1rem;
+}
+
+.grid-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: #FEFEFE  !important;
+    max-width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .p-col-d {
+        display: none;
+    }
+    .p-col-m {
+        display: inline-block;
+    }
+}
