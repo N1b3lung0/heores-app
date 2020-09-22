@@ -19,9 +19,7 @@ export const HeroList = ({ publisher }) => {
                         className="container card animate__animated animate__backInUp"
                     >
                         <div>
-                            {
-                                (alter_ego !== characters) && <p>{ characters }</p>
-                            }
+                            { (alter_ego !== characters) && <p>{ characters }</p> }
                             <p>{ first_appearance }</p>
                             <Link to={`./hero/${ id }`}>Más ...</Link>
                         </div>
